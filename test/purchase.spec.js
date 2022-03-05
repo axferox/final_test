@@ -19,6 +19,7 @@ describe('Test performs the testing of the purchase process', () => {
     await sleep();
   });
   after(async () => {
+    await sleep();
     await quit();
   });
 

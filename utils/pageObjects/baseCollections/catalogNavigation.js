@@ -9,22 +9,22 @@ class CatalogNavigation {
       xpath: '//*[@id="schema-order"]/div[2]/div/div[3]/span',
     });
     this.computersAndNetworks = new BaseElement({
-      xpath: '//*[@id="container"]/div/div/div/div/div[1]/ul/li[3]',
+      xpath: '//span[contains(text(),"Компьютеры и" )]',
     });
     this.laptopsComputersMonitors = new BaseElement({
-      xpath: '//*[@id="container"]/div/div/div/div/div[1]/div[4]/div/div[2]/div[1]/div/div[1]/div[1]',
+      xpath: '//div[contains(text()," Ноутбуки, компьютеры, мониторы ")]',
     });
     this.gamingLaptops = new BaseElement({
-      xpath: '//*[@id="container"]/div/div/div/div/div[1]/div[4]/div/div[2]/div[1]/div/div[1]/div[2]/div/a[2]/span',
+      css: 'a[href*="notebook?nbusage%5B0%5D=gamer"]',
     });
     this.vendorDell = new BaseElement({
-      xpath: '//*[@id="schema-filter"]/div[5]/div[4]/div[2]/ul/li[6]/label/span[2]',
+      xpath: '//div[4]/div[2]/ul/li[6]/label/span[2]',
     });
     this.gamingLaptop = new BaseElement({
-      xpath: '//*[@id="schema-products"]/div[2]/div/div[3]/div[2]/div[1]/a/span',
+      xpath: '//span[contains(text(),"Игровой ноутбук Dell Alienware m15 R6 M15-0365")]',
     });
     this.vendorDellLabel = new BaseElement({
-      xpath: '//*[@id="schema-filter"]/div[5]/div[4]/div[2]/ul/li[6]/label/span[1]/input',
+      xpath: '//div[4]/div[2]/ul/li[6]/label/span[1]/input',
     });
   }
 }
